@@ -22,7 +22,7 @@ jobs:
       - name: Scan source code for known vulnerabilities
         run: PATH=$PWD/tool/:$PATH "$(./tool/go env GOPATH)/bin/govulncheck" -test ./...
 
-      - uses: ruby/action-slack@v3.2.1
+      - uses: ruby/action-slack@v3.2.2
         with:
           payload: >
             {
